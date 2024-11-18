@@ -1,0 +1,14 @@
+site_name: My Wiki
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.code.select
+  palette:
+    primary: blue grey
+    accent: blue
+  icon:
+    logo: material/bookshelf
+markdown_extensions:
+  - toc:
+      baselevel: 2
