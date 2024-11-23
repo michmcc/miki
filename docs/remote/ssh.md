@@ -41,7 +41,13 @@ Host <remote-server-address>
 This will configure SSH to use the `id_ed25519` key pair for the specified remote server.
 
 ### Adding SSH Key to the Agent
-You can add the SSH key to the SSH agent by running the following command:
+
+Check if the SSh agent is running by running the following command:
+```bash
+ssh-add -l
+```
+
+If the SSH agent is not running, you can start it by running the following command:
 ```bash
 eval "$(ssh-agent -s)"
 ```
@@ -59,3 +65,25 @@ ssh -T git@github.com
 ```
 
 This will open an SSH session with GitHub.
+
+### Copy public key to clipboard
+
+```bash
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
+### Update authorized keys
+
+```bash
+sudo nano ~/.ssh/authorized_keys
+```
+
+
+## Linux
+
+
+### Modify sshd_config
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
