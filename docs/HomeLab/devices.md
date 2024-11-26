@@ -11,6 +11,7 @@ title: devices
 | rpi1 | 192.168.1.200 | d8:3a:dd:76:19:76  | raspberrypi | F45767EA17EFAFBC | |
 | rpi2 | 192.168.1.217 | 2c:cf:67:51:d2:a9 |  | 5A55974373897ADA | |
 | rpi3 | 192.168.1.226 | d8:3a:dd:6d:4b:59 |  | D37629BF7EAFD4E5 | |
+| rpi4 | 192.168.1.216 |
 | mm-mac-studio | 192.168.1.103 | 00:0a:35:00:01:13 | macmini | ACE075ED75EC514B | |
 | mm-mac-mini | 192.168.1.104 | 00:0a:35:00:01:14 | macstudio | A9E360402EF80058 | |
 | mm-mba | 192.168.1.105 | 00:0a:35:00:01:15 | macpro | 0C306BA6E684C66B | |
