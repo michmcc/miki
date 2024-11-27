@@ -166,6 +166,17 @@ pinentry-program /usr/bin/pinentry-curses
 gpg-connect-agent reloadagent /bye
 ```
 
+
+## Export public key to temporary directory
+```bash
+gpg --export --armor {{ gpg_key_id }} > /tmp/gpg-public-key.asc
+```
+
+### Copy the public key from the remote machine to the local machine
+```bash
+scp dev@{{ remote_machine }}:/tmp/gpg-public-key.asc /tmp/gpg-public-key.asc
+```
+
 "michael@mm-mba.local"
 "dev@mm-mac-studio.local"
 "michael@mm-mac-studio.local"
