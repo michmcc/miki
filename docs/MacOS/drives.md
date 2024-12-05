@@ -34,6 +34,15 @@ Mount an APFS disk to local home directory:
 sudo mount -t apfs /dev/disk4s2 ~/Volumes/L1
 ```
 
+Using diskutil to mount an APFS disk to local home directory:
+
+```bash
+diskutil mount -mountPoint ~/Volumes/L1 /dev/disk7s1
+```
+
+```bash
+diskutil mount -mountPoint ~/Volumes/T72 /dev/disk5s1
+
 ###	Unmounting
 
 

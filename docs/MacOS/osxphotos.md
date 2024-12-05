@@ -17,6 +17,18 @@ osxphotos export ~/Volumes/T71/backups/photos_backup_01032024/export_Photos_0520
 --library ~/Volumes/T71/backups/photos_backup_01032024/Photos_052021.migratedphotolibrary
 ```
 
+```bash
+osxphotos export '/Volumes/T72/osxphotos' \
+--exportdb '/Users/michael/Pictures/.osxphotos_export.db' \
+--directory "{created.year}/{created.month}" \
+--update \
+--exiftool \
+--touch-file \
+--library '/Users/michael/Pictures/Photos Library.photoslibrary' \
+--download-missing \
+--retry 3
+```
+
 Description of each option:
 
 - `--ramdb`: Uses the RAM disk as the database for the export. This is faster than using the default SQLite database, but it may not be available on all systems.
