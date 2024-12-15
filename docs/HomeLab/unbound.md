@@ -8,11 +8,36 @@ Unbound is a validating, recursive, and caching DNS resolver. It is designed to 
 
 Source: [Unbound DNS](https://docs.pi-hole.net/guides/dns/unbound/)
 
+#### Install
+
+```bash
+sudo apt install unbound -y
+```
+
+(Optional) Install dns-utils for dig
+
+```bash
+sudo apt install dnsutils -y
+```
+
 ### Editing config
 
 
 ```bash
 sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf
+```
+
+Check the config file for errors and correct them.
+
+```bash
+sudo unbound-checkconf
+```
+
+### Restarting the Unbound service
+
+```bash
+sudo systemctl restart unbound
+sudo systemctl enable unbound
 ```
 
 ### Optimizing Unbound
