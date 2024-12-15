@@ -8,6 +8,18 @@ title: Network
 sudo nmcli connection modify "Wired connection 1" ipv4.method auto
 ```
 
+### Bring down WiFi connection
+
+```bash
+nmcli device disconnect wlan0
+```
+
+### Check device status
+
+```bash
+nmcli device status
+```
+
 ### Check DHCP conf
 
 ```bash
